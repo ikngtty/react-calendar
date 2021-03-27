@@ -1,6 +1,6 @@
 import React from 'react';
 import { Date as Date_ } from './date'
-import { Day } from './day'
+import { DayOfWeek } from './day-of-week'
 import { MonthSelector } from './month-selector'
 
 function Week(props: {
@@ -44,13 +44,13 @@ export class Calender
                 onGoToPreviousMonth={() => this.goToPreviousMonth()}
             />
 
-            <Day day="日" />
-            <Day day="月" />
-            <Day day="火" />
-            <Day day="水" />
-            <Day day="木" />
-            <Day day="金" />
-            <Day day="土" />
+            <DayOfWeek value="日" />
+            <DayOfWeek value="月" />
+            <DayOfWeek value="火" />
+            <DayOfWeek value="水" />
+            <DayOfWeek value="木" />
+            <DayOfWeek value="金" />
+            <DayOfWeek value="土" />
             <br />
 
             {weeks.map(week => <Week dates={week} />)}
