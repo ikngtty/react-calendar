@@ -1,13 +1,13 @@
 import React from 'react';
-import { Date as Date_ } from './date'
+import { Day } from './day'
 import { DayOfWeek } from './day-of-week'
 import { MonthSelector } from './month-selector'
 
 function Week(props: {
-    dates: number[],
+    days: number[],
 }) {
     return <div>
-        {props.dates.map(date => <Date_ date={date.toString()} />)}
+        {props.days.map(day => <Day day={day} />)}
     </div>
 }
 
@@ -53,7 +53,7 @@ export class Calender
             <DayOfWeek value="土" />
             <br />
 
-            {weeks.map(week => <Week dates={week} />)}
+            {weeks.map(week => <Week days={week} />)}
         </div>
     }
 
