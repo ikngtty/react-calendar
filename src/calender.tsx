@@ -1,15 +1,7 @@
 import React from 'react';
-import { Day } from './day'
 import { DayOfWeek } from './day-of-week'
 import { MonthSelector } from './month-selector'
-
-function Week(props: {
-    days: number[],
-}) {
-    return <div>
-        {props.days.map(day => <Day day={day} />)}
-    </div>
-}
+import { Week } from './week'
 
 type Props = {}
 type State = {
