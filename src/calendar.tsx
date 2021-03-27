@@ -32,8 +32,8 @@ export class Calendar
         return <div>
             <MonthSelector
                 baseDate={this.state.baseDate}
-                onGoToNextMonth={() => this.goToNextMonth()}
-                onGoToPreviousMonth={() => this.goToPreviousMonth()}
+                onPrevButtonClick={() => this.goToPreviousMonth()}
+                onNextButtonClick={() => this.goToNextMonth()}
             />
 
             <DayOfWeek value="日" />
