@@ -1,10 +1,12 @@
 import React from 'react';
-import { Day } from './day'
+import { DaySelector } from './day-selector'
 
 export function Week(props: {
-    days: number[],
+    days: (number | null)[],
 }) {
     return <div>
-        {props.days.map(day => <Day day={day} />)}
+        {props.days.map(day =>
+            <DaySelector day={day} />
+        )}
     </div>
 }

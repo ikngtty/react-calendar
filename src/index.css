@@ -14,3 +14,12 @@
   height: 150px;
   border: solid 1px;
 }
+
+.dayDummy {
+  /* HACK: Don't repeat contents of `.day` */
+  display: inline-flex;
+  width: 150px;
+  height: 150px;
+  border: solid 1px;
+  background-color: gray;
+}
