@@ -8,7 +8,7 @@ type State = {
     baseDate: Date,
 }
 
-export class Calender
+export class Calendar
     extends React.Component<Props, State> {
 
     constructor(props: Props) {

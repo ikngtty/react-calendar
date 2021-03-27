@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import { CalenderPage } from './calender-page'
+import { CalendarPage } from './calendar-page'
 
 ReactDOM.render(
-    <CalenderPage />,
+    <CalendarPage />,
     document.getElementById('root')
 );
